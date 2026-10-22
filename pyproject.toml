@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wikipedia-mirror"
+version = "0.1.0"
+description = "Locally download, search, annotate and incrementally update a Wikipedia mirror"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+wikimirror = "wikimirror.cli:main"
+
+[tool.setuptools]
+packages = ["wikimirror"]
